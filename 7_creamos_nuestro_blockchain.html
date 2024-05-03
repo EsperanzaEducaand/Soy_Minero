@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>7. Creamos nuestro Blockchain | ¡Soy minerooo...! </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Antonio Domínguez Peñuela y otros" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-126"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">¡Soy minerooo...!</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">¡Soy minerooo...!</a></li>
+   <li><a href="1_qu_vamos_a_hacer.html" class="no-ch">1. ¿Qué vamos a hacer?</a></li>
+   <li><a href="2_nos_encriptamos.html" class="no-ch">2. Nos encriptamos</a></li>
+   <li><a href="3_explorando_tus_habilidades.html" class="no-ch">3. Explorando tus habilidades</a></li>
+   <li><a href="4_un_poco_de_historia.html" class="daddy">4 Un poco de historia</a>
+   <ul class="other-section">
+      <li><a href="41_la_esctala_griega.html" class="no-ch">4.1. La escítala griega.</a></li>
+      <li><a href="41_el_cifrado_csar.html" class="no-ch">4.1. El cifrado César</a></li>
+      <li><a href="42_cifrado_de_vigenre.html" class="no-ch">4.2. Cifrado de Vigenére</a></li>
+      <li><a href="43_la_mquina_enigma.html" class="no-ch">4.3. La máquina enigma</a></li>
+   </ul>
+   </li>
+   <li><a href="5_criptografa_avanzada.html" class="daddy">5. Criptografía avanzada</a>
+   <ul class="other-section">
+      <li><a href="51_criptografa_simtrica.html" class="no-ch">5.1. Criptografía simétrica</a></li>
+      <li><a href="52_criptografa_asimtrica.html" class="no-ch">5.2. Criptografía asimétrica</a></li>
+      <li><a href="53_funciones_de_hash.html" class="no-ch">5.3. Funciones de HASH</a></li>
+      <li><a href="54_esteganografa_y_estegoanlisis.html" class="no-ch">5.4 Esteganografía y estegoanálisis</a></li>
+   </ul>
+   </li>
+   <li><a href="6_blockchain.html" class="daddy">6. Blockchain</a>
+   <ul class="other-section">
+      <li><a href="61_criptomonedas.html" class="no-ch">6.1 Criptomonedas</a></li>
+      <li><a href="62_nfts_y_mucho_ms.html" class="no-ch">6.2. NFTs y mucho más.</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="7_creamos_nuestro_blockchain.html" class="active no-ch">7. Creamos nuestro Blockchain</a></li>
+   <li><a href="8_presenta_tu_trabajo.html" class="no-ch">8. Presenta tu trabajo</a></li>
+   <li><a href="9_sacamos_conclusiones.html" class="no-ch">9. Sacamos conclusiones</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="62_nfts_y_mucho_ms.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>18</strong> de <strong>21</strong></span> <span class="sep">| </span><a href="8_presenta_tu_trabajo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">7. Creamos nuestro Blockchain</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id544">
+<div class="iDevice emphasis0" >
+<div id="ta544_544_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="gif_animado_narrador_juvenil.gif" alt="Retor dice" style="float: left;" width="250" height="250" title="Retor dice"></p>
+<p>¡Cuantas cosas hemos aprendido hasta llegar aquí!.</p>
+<p>Por fin ha llegado el momento de poner en práctica lo aprendido y <strong>realizar nuestro blockchain.</strong></p>
+<p>Si durante la realización de esta parte final, todo te resulta fácil y conocido, quiere decir que has realizado bien todos los apartados anteriores. Si no es así, vuelve a repasar los puntos anteriores cuando sea necesario.</p>
+<p><strong>¡¡Ya casi lo has conseguido!!</strong></p></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id700">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">La cadena de bloques</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta700_700_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Para esta simulación vamos a utilizar un fantástico simulador online llamado "Blockchain Demo" creado por&nbsp; Anders Brownworth que&nbsp;intenta explicar la tecnología basándose en conceptos simples utilizando una demostración web.</p>
+<p>El simulador nos muestra un límite de 5 bloques por lo que realizaremos la tarea en grupos de 5 compañeros o compañeras.</p>
+<div class="exe-fx exe-timeline">
+<h2>1. Inicio</h2>
+<h3>Accedemos al simulador de Blockchain</h3>
+<p>Para realizar nuestro reto vamos a utilizar un simulador de blockchain de <a href="https://andersbrownworth.com/blockchain/blockchain" target="_blank" title="Accede a https://andersbrownworth.com" rel="noopener">https://andersbrownworth.com</a></p>
+<ul>
+<li>Accedemos los 5 componentes del grupo a la vez a través del navegador.</li>
+<li>Encontramos 5 bloques, cada componente será el encargado de uno de ellos.</li>
+<li>Realizamos el reparto y estaremos listos para comenzar.</li>
+</ul>
+<h2>2. Minamos el primer bloque</h2>
+<h3>Partes del bloque</h3>
+<p><img src="bloque.PNG" alt="Bloque" width="278" height="421" style="float: left; margin-right: 15px; margin-left: 15px;" title="Bloque 1">El bloque tiene 5 artes:</p>
+<p>- Nº del bloque --&gt; se genera automáticamente</p>
+<p>- Nonce --&gt; el algoritmo lo cambiará miles de veces para generar el hash.</p>
+<p>- Datos --&gt; es la información que<strong> introducimos nosotros</strong> y que se almacena en el bloque.</p>
+<p>- Hash del bloque anterior --&gt; el algoritmo lo toma automáticamente del bloque anterior y sirve para crear la cadena.</p>
+<p>- Hash del bloque --&gt; se obtiene aplicando el algoritmo de hash al conjunto de datos anteriores:</p>
+<h5><em>SHA256 (Número de bloque, Nonce, Datos, Hash del bloque anterior)&nbsp; &nbsp; &nbsp;--&gt; Hash</em></h5>
+<h3>Introducimos la información en los datos</h3>
+<p>Podemos poner nuestro nombre.</p>
+<p>A continuación pulsamos en <strong>"Minar"</strong>. <strong>¡¡Ya estamos minando!!</strong></p>
+<h3>Prueba de trabajo (PoW)</h3>
+<ul>
+<li>En este caso y para ir más rápido el hash debe comenzar con <strong>4 ceros</strong>.&nbsp;</li>
+<li>Esta condición es la que hace que el minado tarde un tiempo, pues el algoritmo empieza a probar cambiando el <strong>Nonce</strong> desde 1 hasta encontrar el hash correcto.</li>
+<li>Normalmente tardará 2 ó 3 segundos. cuanto más alto sea el Nonce, más pruebas ha realizado y más tiempo ha tardado.</li>
+<li>En el Bitcoin la condición ya va por unos <strong>20 ceros</strong> y es lo que aumenta la dificultad del minado cada cuatro años aproximadamente.</li>
+</ul>
+<h2>3. Creamos la red</h2>
+<h3>Minamos los 5 bloques</h3>
+<ul>
+<li>Cada minero del grupo debe minar los <strong>5 bloques</strong> empezando por el 1 hasta el 5, introduciendo como dato el <strong>nombre de sus compañeros o compañeras</strong> en cada bloque.</li>
+<li>Hay que tener cuidado con los espacios que también se minan y pueden ocasionar un<strong> hash diferente</strong> aunque parezcan los mismos datos.</li>
+<li>Si todo es correcto todos deberían tener la <strong>misma cadena</strong>.</li>
+<li>En una <strong>blockchain real</strong> cada minero sólo minaría un bloque que se comparte de forma automática con los demás por la red descentralizada P2P. El resto valida el bloque comprobando que todo es correcto.&nbsp;&nbsp;</li>
+</ul>
+<h2>4. Pruebas con los bloques</h2>
+<h3>Comprobamos que no se pueden modificar.</h3>
+<ul>
+<li>Si ahora uno de los mineros<strong> altera en el bloque 3</strong> por ejemplo, algún dato como añadir una letra, ¿qué ocurre?.</li>
+<li>Si mina también los <strong>bloques siguientes 4 y 5</strong> de su cadena, ¿estarían validados sus cambios?.</li>
+<li>En un&nbsp;blockchain real los demás mineros no pararían de minar nuevos bloques <strong>aumentando</strong> constantemente la cadena.</li>
+<li>¿Qué tendría que pasar para que la versión de la cadena modificada fuera la correcta?. Recuerda lo del ataque del <strong>51%</strong>.</li>
+<li>Si todos los mineros crean nuevos bloques, ¿Quién se lleva la <strong>recompensa</strong>?.</li>
+<li>¿Se te ocurren <strong>otras pruebas</strong> para realizar?</li>
+</ul>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2><span class="sr-av">Lumen dice </span>Te doy unas recomendaciones</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Te voy a dar un par de recomendaciones para poder preparar tu trabajo final.</p>
+<ul>
+<li>A medida que creas el blockchain y realizas las pruebas, te recomiendo que tomes <strong>capturas</strong> que te serán muy útiles a la hora de presentar tu trabajo.</li>
+<li>Como los bloques ocupan toda la pantalla, puedes <strong>reducir el tamaño de la ventana</strong> para que las capturas no sean imágenes tan grandes.</li>
+</ul></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Clavis dice </span>Si quieres más detalles</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Si quieres una explicación más detallada y completa puedes ver este vídeo también de la página de "Blockchain Demo"&nbsp; de Anders Brownworth <a href="https://andersbrownworth.com/blockchain/" target="_blank" title="Accede a https://andersbrownworth.com/blockchain/" rel="noopener">https://andersbrownworth.com</a></p>
+<p style="text-align: left;">Aunque está en inglés con los subtítulos en español es fácil de entender.</p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/_160oMzblY8" allowfullscreen="allowfullscreen"></iframe></p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-1"><h2><span class="sr-av">Motus dice </span>Valora lo que has conseguido</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>¿Te has dado cuenta de la cantidad de cosas que has tenido que hacer para completar la actividad?</p>
+<p>Al realizar esta actividad has tenido que poner en juego casi todo lo que sabes. A veces para aprender tenemos que trabajar de forma constante. Cuando nos esforzamos mucho nuestro trabajo es valorado por nuestros profes y familiares. Pero lo más importante es que <strong>nos sentimos muy contentos por el trabajo realizado</strong>.</p>
+<p>Te animo a que sigas trabajando para que puedas aprender y seguir mejorando.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="62_nfts_y_mucho_ms.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>18</strong> de <strong>21</strong></span> <span class="sep">| </span><a href="8_presenta_tu_trabajo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
